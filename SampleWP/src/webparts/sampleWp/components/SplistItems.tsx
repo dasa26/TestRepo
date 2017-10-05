@@ -44,14 +44,14 @@ export default class SplistItems extends React.Component<ISampleWpProps, ISample
             type: "GET",
             headers: {'Accept': 'application/json; odata=verbose;'},
             success: function (resultData){
-                 debugger;
-                    if (!jquery.trim(resultData)){   
-                        alert("What follows is blank: " + resultData);
-                    }
-                    else{ 
-                        alert("What follows is not blank: " + resultData);  
-                        alert("What follows is not blank: " + resultData);
-                    }
+                //  debugger;
+                //     if (!jquery.trim(resultData)){   
+                //         alert("What follows is blank: " + resultData);
+                //     }
+                //     else{ 
+                //         alert("What follows is not blank: " + resultData);  
+                //         alert("What follows is not blank: " + resultData);
+                //     }
                 reacthandler.setState({
                     items: resultData
                 });
@@ -106,13 +106,13 @@ export default class SplistItems extends React.Component<ISampleWpProps, ISample
                             return (<li className={styles.Row} key={key}>  
                                 <div className={styles.Cell}>{item.AssetName}</div> 
                                 <div className={styles.Cell}>{item.todaysPrice}</div> 
-                                <div className={styles.highColor}>{item.priceDifference}</div></li>);  
+                                <div className={styles.highColor}>+{item.priceDifference}</div></li>);  
                             }
                             else {
                             return (<li className={styles.Row} key={key}>  
                                 <div className={styles.Cell}>{item.AssetName}</div> 
                                 <div className={styles.Cell}>{item.todaysPrice}</div> 
-                                <div className={styles.lowColor}>{item.priceDifference}</div></li>);  
+                                <div className={styles.lowColor}>-{item.priceDifference}</div></li>);  
                             }
                             })}  
                     </ul>            
