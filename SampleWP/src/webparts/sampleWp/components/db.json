@@ -1,0 +1,30 @@
+ {
+    "stockDetails": [
+                {
+                    "AssetName":"MasterCard",
+                    "todaysPrice": 141.70,
+                    "priceDifference":0.08,
+                    "priceIncrease": false
+                },
+
+                {
+                    "AssetName":"VISA",
+                    "todaysPrice": 100.70,
+                    "priceDifference":0.06,
+                    "priceIncrease": true
+                },
+
+                {
+                    "AssetName":"American Express",
+                    "todaysPrice": 41.70,
+                    "priceDifference":8,
+                    "priceIncrease": false
+                },
+                {
+                    "AssetName":"PayPal",
+                    "todaysPrice": 41.70,
+                    "priceDifference":8,
+                    "priceIncrease": true
+                }
+            ]
+ }

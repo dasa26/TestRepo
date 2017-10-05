@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sample-wp-client-side-solution",
+    "id": "154d25fd-3f41-48e1-8694-6a36011fa640",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": false
+  },
+  "paths": {
+    "zippedPackage": "solution/sample-wp.sppkg"
+  }
+}
