@@ -127,28 +127,4 @@ describe('<SplistItems />',() =>{
      
   });
 
-   it('<SplistItems/> Check the fetched array members is equal to the mock array members for testing',(done) =>{
-     setTimeout( () => {
-         try{
-            expect(renderedElement.state('items').arrays).length.is.null;
-            //expect(renderedElement.state('items')).should.include.something.that.deep.equals()
-        // var elm = shallow(<SplistItems description={descTxt}/>).state('items').find('div').length;
-        //     return expect(elm).to.eventually.be.an('array')
-        //     .that.contains.something.with.property('AssetName','todaysPrice');
-        //expect(renderedElement.state('items')).should.be.an('array').that.contains.something.with
-            done();
-         }
-        catch(e){
-            done(e);
-        }
-        
-        
-    }, 1000 );      
-     
-  });
-
-//   it('<SplistItems/> CHeck the coloring for price difference', () =>{
-//     /////IN PROGRESS/////////////////
-//   });
-
 });
